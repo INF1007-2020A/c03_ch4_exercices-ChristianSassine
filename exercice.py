@@ -3,19 +3,26 @@
 
 
 def is_even_len(string: str) -> bool:
-    return False
+    lengh_string = len(string) % 2
+    if lengh_string == 0:
+        even_res = True
+    else:
+        even_res = False
+    return even_res
 
 
 def remove_third_char(string: str) -> str:
-    return ""
+    return string[:2] + string[3:]
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    return ""
+    repl_string = string.replace(old_char , new_char)
+    return repl_string
 
 
 def get_nb_char(string: str, char: str) -> int:
-    return 0
+
+    return char
 
 
 def get_nb_words(sentence: str) -> int:
